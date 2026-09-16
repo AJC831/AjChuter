@@ -55,4 +55,5 @@ Next step is setting up Destination port ranges, protocal, action.
 <img width="1923" height="897" alt="Figureing out which port would work" src="https://github.com/user-attachments/assets/4ffe3953-06bc-4790-b45d-2adc4e1400f6" />
 Once that is done youll come to this screen. to make sure its working press check access once that is pressed and it works just load up RDP again and type in your password and username.
 <img width="953" height="666" alt="Finnally getting the port to work without IP" src="https://github.com/user-attachments/assets/88ac0cb1-304d-480d-bb45-271f9462856c" />
+
 That is how you Troubleshoot making a VM and getting ports to work on it.
