@@ -1,26 +1,20 @@
-## Hi there Im AJ a learning IT/Tech guy
+IT Project Building a Virtual Machine and Getting The RDP To work
 
-IT Project Troubleshooting on Building a VM And Connecting to It Through RDP
+This project is to demonstrate how to build a virtual machine and what to do if the ports on for connecting to the RDP are not working after being built.
 
-What was needed for this project is a Auzre Virtual Machines,Azure Subscription, Windows 10 enterprise, Windows 10, Chat Gpt, and a can do attitude. 
-
-This project is to highlight that most IT Helpdesk errors are to be resolved through troubleshooting.
-Troubleshooting is a skill that requires using your resources, thinking outside the box and willing do to trial and error until the issue is resolved.
+What was needed for this project is a Auzre Virtual Machines,Azure Subscription, Windows 10 enterprise, Windows 10, and a can do attitude. 
 
 Where this project will start is right after creating a resource group in Azure
 right after the Resource group is made Making the virtual machine is the next step.
 <img width="1452" height="903" alt="Before everything went south" src="https://github.com/user-attachments/assets/65968428-6e73-461d-82bb-245bb3780fd2" />
 
 When creating a virtual machine a few things are needed like Internet, Region , secuirty type, Image and size.
-When watching the lab about azure It was noticed that whenever I was attempting to using windows pro 11 It would say that the image was too big for the subscription being used to create the VM.
-Which was the first of many issues ran into.
-
- To fix this the selection of Windows 10 Enterprise version 22h2 - 64 Gen2 then under size I went and searched up where to find less memory as to take up less space. This is where Chat GPT came in handy to help me find the exact size it needed to be able to run. The size used was Standard_D2als_v7 - 2vcpus, 4 GiB memory just to shrink it down enough to run. The final step was changing the security type to standard.
+You may have to search around for the Image size that suits the computer best, My computer does not have windows 11. Going into the drop down selection menu for everything we will have to find The right Image.
+ The selection of Windows 10 Enterprise version 22h2 - 64 Gen2 then under size I went and searched up where to find less memory as to take up less space. The size used was Standard_D2als_v7 - 2vcpus, 4 GiB memory just to shrink it down enough to run. The final step was changing the security type to standard.
  
 <img width="1294" height="725" alt="Figuring out which Windows 10 could work with it" src="https://github.com/user-attachments/assets/86b675b0-0ebe-4154-a7c6-f86532afd65f" />
 
-Now As you can see another problem Popped up Right away.
-This was a network problem, So the next step in our to do list to figure out why the networking isn't working after popping over to networking you find out you have to create a few items to get it to work.
+Now The next Step was Congiguring the network. During this step Youll have to create a 
 <img width="1913" height="912" alt="Before the subnet was added" src="https://github.com/user-attachments/assets/8851e641-78b8-4310-9ccf-c09db33abbc7" />
 
 To create the Subnet you have to give it an PIv4 address space. 
