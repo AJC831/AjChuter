@@ -35,7 +35,8 @@ Once this pops up if it works it will ask for a username and password to get in.
 
 <img width="606" height="275" alt="Port not working" src="https://github.com/user-attachments/assets/13237f33-ca5e-42f3-b080-79c7ce2090d9" />
 
-Next you have to go into the network setting and whats going on. Once youre into network settings you can see what the problem is. The problem here was that port 3389 was denying access from the Soures IP(s)
+So Next I checked the networks VM configuration and examined the inbound security rules. The connection was being denied by network security configuration.
+More specifically port 3389 was denying access from the Soures IP(s).
 
 <img width="1677" height="685" alt="Troubleshooting how to get the Port to open to be able to use without IP" src="https://github.com/user-attachments/assets/85529fee-15bd-4c13-ba84-e2120aac2a8c" />
 
