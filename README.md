@@ -2,7 +2,7 @@ IT Project Building a Virtual Machine and Getting The RDP To work
 
 This project is to demonstrate how to build a virtual machine and what to do if the ports on for connecting to the RDP are not working after being built.
 
-What was needed for this project is a Auzre Virtual Machines,Azure Subscription, Windows 10 enterprise, Windows 10, and a can do attitude. 
+What was needed for this project is a Azure Virtual Machines, Azure Subscription, Windows 10 enterprise, Windows 10, and a can do attitude. There were no languages used to create this.
 
 Where this project will start is right after creating a resource group in Azure
 <img width="1452" height="903" alt="Before everything went south" src="https://github.com/user-attachments/assets/65968428-6e73-461d-82bb-245bb3780fd2" />
@@ -45,6 +45,6 @@ To fix this create a port rule.
 Next step is setting up Destination port ranges, protocal, action.
 When setting up the port ranges in the port rule you have to set a specific port for yours to work there are several but for this I chose TCP 8080 because the Ip was denying traffic to port 3389, Selected the TCP Protocal to make sure its on the right one. Action was to set to Allow. For Priority it must be set to a specific number between 100 and 4096, The lower the better. I Chose 300.
 <img width="1923" height="897" alt="Figureing out which port would work" src="https://github.com/user-attachments/assets/4ffe3953-06bc-4790-b45d-2adc4e1400f6" />
-Once that is done youll come to this screen. to make sure its working press check access once that is pressed and it works just load up RDP again and type in your password and username.
+Once that is done youll come to this screen.To make sure its working press check access once that is pressed and it works just load up RDP again and type in your password and username.
 <img width="953" height="666" alt="Finnally getting the port to work without IP" src="https://github.com/user-attachments/assets/88ac0cb1-304d-480d-bb45-271f9462856c" />
 After all of that is done it will be able to be used, you can run tests on it and or just work on connecting to the VM
