@@ -13,7 +13,7 @@ You may have to search around for the Image size that suits the computer best, M
  
 <img width="1294" height="725" alt="Figuring out which Windows 10 could work with it" src="https://github.com/user-attachments/assets/86b675b0-0ebe-4154-a7c6-f86532afd65f" />
 
-Now The next Step was Congiguring the network. During this step Youll have to create a IPv4 Address space and a subnet
+Now The next Step was Configuring the network. During this step Youll have to create a IPv4 Address space and a subnet
 <img width="1913" height="912" alt="Before the subnet was added" src="https://github.com/user-attachments/assets/8851e641-78b8-4310-9ccf-c09db33abbc7" />
 
 To create the Subnet you have to give it an IPv4 address space. 
