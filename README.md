@@ -22,12 +22,11 @@ To create the Subnet you have to give it an IPv4 address space.
 Once added you will be given the ability to a add a subnet.
 <img width="1383" height="814" alt="Adding in the subnet to get it work" src="https://github.com/user-attachments/assets/f948b83f-0061-4f79-a330-7350e747cd09" />
 
-Now its working.
+Now its working.finishing creating the VM and getting started on trying to get connected to it.
+So you make the attempt to connect to your VM using RDP you can find the IP Address by going into the resource group and clicking on the Windows VM from there youll be able to find the VM.
 
 <img width="1679" height="866" alt="The Virtual machine working" src="https://github.com/user-attachments/assets/3e712e5a-bcfc-493b-bc70-a4ab7e51328d" />
  
-finishing creating the VM and getting started on trying to get connected to it.
-So you make the attempt to connect to connect to your VM using RDP you can find the IP Address by going into the resource group and clicking on the Windows VM from there youll be able to find the VM.
 Type in RDP in your Windows search bar and click on it, this will be the image that pops up.
 
 <img width="972" height="335" alt="Remote desktop connection before fail" src="https://github.com/user-attachments/assets/8371ca83-1d7b-4e08-813a-d913667820bf" />
@@ -43,8 +42,9 @@ Next you have to go into the network setting and whats going on.
 So to fix this create a port rule.
 <img width="1856" height="883" alt="lab picutre trouble shooting ports" src="https://github.com/user-attachments/assets/a93bb873-f018-49a9-9ac4-bf4aba58b72a" />
 Next step is setting up Destination port ranges, protocal, action.
+When setting up the port ranges you have to set a specific port for yours to work there are several but for this I chose TCP 8080 because the Ip was denying traffic to port 3389
 <img width="1923" height="897" alt="Figureing out which port would work" src="https://github.com/user-attachments/assets/4ffe3953-06bc-4790-b45d-2adc4e1400f6" />
 Once that is done youll come to this screen. to make sure its working press check access once that is pressed and it works just load up RDP again and type in your password and username.
 <img width="953" height="666" alt="Finnally getting the port to work without IP" src="https://github.com/user-attachments/assets/88ac0cb1-304d-480d-bb45-271f9462856c" />
 
-That is how you Troubleshoot making a VM and getting ports to work on it.
+After all of that is done it will be able to be used, you can run tests on it and or just work on connecting to the VM
