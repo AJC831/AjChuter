@@ -5,19 +5,18 @@ This project is to demonstrate how to build a virtual machine and what to do if 
 What was needed for this project is a Auzre Virtual Machines,Azure Subscription, Windows 10 enterprise, Windows 10, and a can do attitude. 
 
 Where this project will start is right after creating a resource group in Azure
-right after the Resource group is made Making the virtual machine is the next step.
 <img width="1452" height="903" alt="Before everything went south" src="https://github.com/user-attachments/assets/65968428-6e73-461d-82bb-245bb3780fd2" />
 
 When creating a virtual machine a few things are needed like Internet, Region , secuirty type, Image and size.
 You may have to search around for the Image size that suits the computer best, My computer does not have windows 11. Going into the drop down selection menu for everything we will have to find The right Image.
- The selection of Windows 10 Enterprise version 22h2 - 64 Gen2 then under size I went and searched up where to find less memory as to take up less space. The size used was Standard_D2als_v7 - 2vcpus, 4 GiB memory just to shrink it down enough to run. The final step was changing the security type to standard.
+ The selection of Windows 10 Enterprise version 22h2 - 64 Gen2 then under size I went and searched up where to find less memory as to take up less space. The size used was Standard_D2als_v7 - 2vcpus, 4 GiB memory just to shrink it down enough to run. The Next step was changing the security type to standard. Final Step in this was picking a region I chose central US.
  
 <img width="1294" height="725" alt="Figuring out which Windows 10 could work with it" src="https://github.com/user-attachments/assets/86b675b0-0ebe-4154-a7c6-f86532afd65f" />
 
-Now The next Step was Congiguring the network. During this step Youll have to create a 
+Now The next Step was Congiguring the network. During this step Youll have to create a IPv4 Address space and a subnet
 <img width="1913" height="912" alt="Before the subnet was added" src="https://github.com/user-attachments/assets/8851e641-78b8-4310-9ccf-c09db33abbc7" />
 
-To create the Subnet you have to give it an PIv4 address space. 
+To create the Subnet you have to give it an IPv4 address space. 
 <img width="1207" height="747" alt="Realizing had to add more thaen already did" src="https://github.com/user-attachments/assets/6d73244c-3470-489d-a003-fb95ab41d10f" />
 
 Once added you will be given the ability to a add a subnet.
@@ -26,12 +25,10 @@ Once added you will be given the ability to a add a subnet.
 Now its working.
 
 <img width="1679" height="866" alt="The Virtual machine working" src="https://github.com/user-attachments/assets/3e712e5a-bcfc-493b-bc70-a4ab7e51328d" />
-
-Now that you've gotten this far its time for the next best part. 
+ 
 finishing creating the VM and getting started on trying to get connected to it.
-Next problem and this was the biggest one for long period of time.
 So you make the attempt to connect to connect to your VM using RDP you can find the IP Address by going into the resource group and clicking on the Windows VM from there youll be able to find the VM.
-Type in RDP in you search bar and click on it, this will be the image that pops up.
+Type in RDP in your Windows search bar and click on it, this will be the image that pops up.
 
 <img width="972" height="335" alt="Remote desktop connection before fail" src="https://github.com/user-attachments/assets/8371ca83-1d7b-4e08-813a-d913667820bf" />
 
