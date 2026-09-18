@@ -35,16 +35,15 @@ Once this pops up if it works it will ask for a username and password to get in.
 
 <img width="606" height="275" alt="Port not working" src="https://github.com/user-attachments/assets/13237f33-ca5e-42f3-b080-79c7ce2090d9" />
 
-Next you have to go into the network setting and whats going on.
+Next you have to go into the network setting and whats going on. Once youre into network settings you can see what the problem is. The problem here was that port 3389 was denying access from the Soures IP(s)
 
 <img width="1677" height="685" alt="Troubleshooting how to get the Port to open to be able to use without IP" src="https://github.com/user-attachments/assets/85529fee-15bd-4c13-ba84-e2120aac2a8c" />
 
-So to fix this create a port rule.
+To fix this create a port rule.
 <img width="1856" height="883" alt="lab picutre trouble shooting ports" src="https://github.com/user-attachments/assets/a93bb873-f018-49a9-9ac4-bf4aba58b72a" />
 Next step is setting up Destination port ranges, protocal, action.
-When setting up the port ranges you have to set a specific port for yours to work there are several but for this I chose TCP 8080 because the Ip was denying traffic to port 3389
+When setting up the port ranges in the port rule you have to set a specific port for yours to work there are several but for this I chose TCP 8080 because the Ip was denying traffic to port 3389, Selected the TCP Protocal to make sure its on the right one. Action was to set to Allow. For Priority it must be set to a specific number between 100 and 4096, The lower the better. I Chose 300.
 <img width="1923" height="897" alt="Figureing out which port would work" src="https://github.com/user-attachments/assets/4ffe3953-06bc-4790-b45d-2adc4e1400f6" />
 Once that is done youll come to this screen. to make sure its working press check access once that is pressed and it works just load up RDP again and type in your password and username.
 <img width="953" height="666" alt="Finnally getting the port to work without IP" src="https://github.com/user-attachments/assets/88ac0cb1-304d-480d-bb45-271f9462856c" />
-
 After all of that is done it will be able to be used, you can run tests on it and or just work on connecting to the VM
